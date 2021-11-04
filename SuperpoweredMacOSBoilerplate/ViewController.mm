@@ -10,9 +10,14 @@
 #import "SuperpoweredSimple.h"
 #import "SuperpoweredOSXAudioIO.h"
 #import "SuperpoweredGenerator.h"
+#import "CustomButton.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) SuperpoweredOSXAudioIO *superpowered;
+@property (weak) IBOutlet CustomButton *buttonA;
+@property (weak) IBOutlet CustomButton *buttonB;
+@property (weak) IBOutlet CustomButton *buttonC;
+@property (weak) IBOutlet CustomButton *buttonD;
 @end
 
 
@@ -27,12 +32,14 @@
 -(void)playNote:(float) frequency {
     generator->frequency = frequency;
     genVolume = 1;
+    NSLog(@"mouse down: %f", frequency);
 }
 
 // I would like this to be triggered on mouse up (and nouse out) of all buttons
 
 -(void)stopNote {
     genVolume = 0;
+    NSLog(@"mouse up");
 }
 
 
@@ -62,6 +69,32 @@
 
     self.superpowered = [[SuperpoweredOSXAudioIO alloc] initWithDelegate:(id<SuperpoweredOSXAudioIODelegate>)self preferredBufferSizeMs:12 numberOfChannels:2 enableInput:true enableOutput:true];
     [self.superpowered start];
+    
+    // Button event
+    self.buttonA.mouseUpBlock = ^{
+        [self stopNote];
+    };
+    self.buttonA.mouseDownBlock = ^{
+        [self playNote:200];
+    };
+    self.buttonB.mouseUpBlock = ^{
+        [self stopNote];
+    };
+    self.buttonB.mouseDownBlock = ^{
+        [self playNote:300];
+    };
+    self.buttonC.mouseUpBlock = ^{
+        [self stopNote];
+    };
+    self.buttonC.mouseDownBlock = ^{
+        [self playNote:400];
+    };
+    self.buttonD.mouseUpBlock = ^{
+        [self stopNote];
+    };
+    self.buttonD.mouseDownBlock = ^{
+        [self playNote:600];
+    };
 }
 
 - (bool)audioProcessingCallback:(float **)inputBuffers inputChannels:(unsigned int)inputChannels outputBuffers:(float **)outputBuffers outputChannels:(unsigned int)outputChannels numberOfFrames:(unsigned int)numberOfFrames samplerate:(unsigned int)samplerate hostTime:(unsigned long long int)hostTime {

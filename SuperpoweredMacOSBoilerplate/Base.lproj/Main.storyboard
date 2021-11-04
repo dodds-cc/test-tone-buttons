@@ -733,7 +733,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <button identifier="a" autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WO5-OR-Y5E">
+                                                    <button identifier="a" autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WO5-OR-Y5E" customClass="CustomButton">
                                                         <rect key="frame" x="52" y="300" width="54" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <buttonCell key="cell" type="push" title="A" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="RFT-iL-MJU">
@@ -752,7 +752,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button identifier="b" autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="30J-Wp-IGY">
+                                                    <button identifier="b" autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="30J-Wp-IGY" customClass="CustomButton">
                                                         <rect key="frame" x="104" y="300" width="54" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <buttonCell key="cell" type="push" title="B" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="pWe-yL-HkL">
@@ -766,7 +766,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button identifier="c" autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbV-E8-4si">
+                                                    <button identifier="c" autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbV-E8-4si" customClass="CustomButton">
                                                         <rect key="frame" x="162" y="300" width="54" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <buttonCell key="cell" type="push" title="C" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="fzQ-vW-iGy">
@@ -780,7 +780,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button identifier="d" autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LxL-8Q-ce5">
+                                                    <button identifier="d" autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LxL-8Q-ce5" customClass="CustomButton">
                                                         <rect key="frame" x="224" y="300" width="54" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <buttonCell key="cell" type="push" title="D" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="gO0-3C-Drj">
@@ -804,6 +804,12 @@
                             </box>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="buttonA" destination="WO5-OR-Y5E" id="4IF-6W-k17"/>
+                        <outlet property="buttonB" destination="30J-Wp-IGY" id="vum-mG-1rF"/>
+                        <outlet property="buttonC" destination="bbV-E8-4si" id="pY7-s0-Qtq"/>
+                        <outlet property="buttonD" destination="LxL-8Q-ce5" id="Wld-2M-621"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

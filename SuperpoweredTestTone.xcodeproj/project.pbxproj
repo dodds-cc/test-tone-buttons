@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B977F36273400FF00D46A1E /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B977F35273400FF00D46A1E /* CustomButton.m */; };
 		986B71D82721B24C00359D2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986B71D72721B24C00359D2D /* AppDelegate.m */; };
 		986B71DB2721B24C00359D2D /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 986B71DA2721B24C00359D2D /* ViewController.mm */; };
 		986B71DD2721B24F00359D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986B71DC2721B24F00359D2D /* Assets.xcassets */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B977F34273400FF00D46A1E /* CustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		0B977F35273400FF00D46A1E /* CustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		986B71D32721B24C00359D2D /* SuperpoweredMacOSBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperpoweredMacOSBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		986B71D62721B24C00359D2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		986B71D72721B24C00359D2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				986B71D72721B24C00359D2D /* AppDelegate.m */,
 				986B71D92721B24C00359D2D /* ViewController.h */,
 				986B71DA2721B24C00359D2D /* ViewController.mm */,
+				0B977F34273400FF00D46A1E /* CustomButton.h */,
+				0B977F35273400FF00D46A1E /* CustomButton.m */,
 				986B71EC2721B37100359D2D /* SuperpoweredOSXAudioIO.h */,
 				986B71ED2721B37100359D2D /* SuperpoweredOSXAudioIO.mm */,
 				986B71DC2721B24F00359D2D /* Assets.xcassets */,
@@ -131,7 +136,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 986B71CE2721B24C00359D2D /* Build configuration list for PBXProject "SuperpoweredMacOSBoilerplate" */;
+			buildConfigurationList = 986B71CE2721B24C00359D2D /* Build configuration list for PBXProject "SuperpoweredTestTone" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -167,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				986B71DB2721B24C00359D2D /* ViewController.mm in Sources */,
+				0B977F36273400FF00D46A1E /* CustomButton.m in Sources */,
 				986B71E22721B24F00359D2D /* main.m in Sources */,
 				986B71EE2721B37100359D2D /* SuperpoweredOSXAudioIO.mm in Sources */,
 				986B71D82721B24C00359D2D /* AppDelegate.m in Sources */,
@@ -363,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		986B71CE2721B24C00359D2D /* Build configuration list for PBXProject "SuperpoweredMacOSBoilerplate" */ = {
+		986B71CE2721B24C00359D2D /* Build configuration list for PBXProject "SuperpoweredTestTone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				986B71E42721B24F00359D2D /* Debug */,
